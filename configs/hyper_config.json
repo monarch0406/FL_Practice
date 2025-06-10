@@ -1,0 +1,1661 @@
+{
+    "Cifar10": {
+        "fedavg": {},
+
+        "fedprox": {
+            "mu": 0.04
+        },
+
+        "scaffold": {},
+
+        "fedmd": {
+            "finetine_epochs": 80,
+            "logit_matching_epochs": 2
+        },
+
+        "feddf": {
+            "ensemble_epoch": 50,
+            "sever_local_steps": 9,
+            "T": 35,
+            "d_batch_size": 64
+        },
+
+        "fedgen": {
+            "ensemble_epochs": 20,
+            "ensemble_alpha": 6,
+            "ensemble_eta": 8,
+            "generative_alpha": 19,
+            "gen_batch_size": 128
+        },
+
+        "moon": {
+            "mu": 7,
+            "T": 30
+        },
+
+        "fedproto": {
+            "ld": 11.09
+        },
+
+        "fedprotov2": {
+            "ld": 0.1
+        },
+
+        "fpl": {
+            "infoNCET": 0.03
+        },
+
+        "flwf": {
+            "alpha": 5,
+            "T": 8
+        },
+
+        "cfed": {
+            "local_d_epochs": 1,
+            "server_d_epochs": 7,
+            "T": 50,
+            "alpha": 0.0023,
+            "d_batch_size": 32
+        },
+
+        "target": {
+            "alpha": 20,
+            "g_steps": 40,
+            "kd_steps": 20,
+            "warmup": 8,
+            "syn_round": 25,
+            "oh": 3,
+            "bn": 13,
+            "adv": 2,
+            "T": 7,
+            "gen_T": 15
+        },
+
+        "fccl": {
+            "public_batch_size": 64,
+            "off_diag_weight": 0.99
+        },
+
+        "fedcl": {
+            "proxy_ratio": 0.05,
+            "coe": 1.5
+        },
+
+        "fedprox+dpfl": {
+            "static": {
+                "iterations": 1,
+                "mu": 0.06225823565760387,
+                "inner_round_g": 9,
+                "inner_round_d": 2,
+                "kd_gamma": 1,
+                "kd_beta": 3,
+                "kd_eta": 5,
+                "con_T": 50,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "iterations": 1,
+                "mu": 0.049550735019850356,
+                "inner_round_g": 6,
+                "inner_round_d": 1,
+                "kd_gamma": 9,
+                "kd_beta": 6,
+                "kd_eta": 3,
+                "con_T": 10,
+                "online_rate": -0.2,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "iterations": 1,
+                "mu": 0.0410593296001578,
+                "inner_round_g": 3,
+                "inner_round_d": 1,
+                "kd_gamma": 6,
+                "kd_beta": 3,
+                "kd_eta": 6,
+                "con_T": 20,
+                "online_rate": -0.06,
+                "offline_rate": 0.08,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "iterations": 1,
+                "mu": 0.013665491468642828,
+                "inner_round_g": 7,
+                "inner_round_d": 3,
+                "kd_gamma": 5,
+                "kd_beta": 8,
+                "kd_eta": 2,
+                "con_T": 40,
+                "online_rate": 0.1,
+                "offline_rate": -0.12,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "iterations": 1,
+                "mu": 0.021071366206026627,
+                "inner_round_g": 8,
+                "inner_round_d": 2,
+                "kd_gamma": 7,
+                "kd_beta": 3,
+                "kd_eta": 2,
+                "con_T": 40,
+                "online_rate": 0,
+                "offline_rate": -0.04,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "iterations": 1,
+                "mu": 0.039970473392128565,
+                "inner_round_g": 10,
+                "inner_round_d": 4,
+                "kd_gamma": 6,
+                "kd_beta": 4,
+                "kd_eta": 7,
+                "con_T": 1,
+                "online_rate": 0.02,
+                "offline_rate": 0.02,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "fedgen+dpfl": {
+            "static": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 5,
+                "ensemble_eta": 5,
+                "inner_round_g": 2,
+                "inner_round_d": 1,
+                "kd_gamma": 10,
+                "kd_beta": 5,
+                "kd_eta": 9,
+                "con_T": 1,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 9,
+                "ensemble_eta": 3,
+                "inner_round_g": 4,
+                "inner_round_d": 1,
+                "kd_gamma": 10,
+                "kd_beta": 2,
+                "kd_eta": 8,
+                "con_T": 10,
+                "online_rate": -0.06,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 2,
+                "ensemble_eta": 3,
+                "inner_round_g": 4,
+                "inner_round_d": 3,
+                "kd_gamma": 8,
+                "kd_beta": 3,
+                "kd_eta": 5,
+                "con_T": 20,
+                "online_rate": -0.08,
+                "offline_rate": 0.2,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 10,
+                "ensemble_eta": 2,
+                "inner_round_g": 5,
+                "inner_round_d": 3,
+                "kd_gamma": 5,
+                "kd_beta": 9,
+                "kd_eta": 8,
+                "con_T": 20,
+                "online_rate": 0.18,
+                "offline_rate": -0.04,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 1,
+                "ensemble_eta": 4,
+                "inner_round_g": 7,
+                "inner_round_d": 2,
+                "kd_gamma": 5,
+                "kd_beta": 8,
+                "kd_eta": 6,
+                "con_T": 10,
+                "online_rate": -0.08,
+                "offline_rate": -0.02,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 9,
+                "ensemble_eta": 1,
+                "inner_round_g": 9,
+                "inner_round_d": 2,
+                "kd_gamma": 9,
+                "kd_beta": 2,
+                "kd_eta": 8,
+                "con_T": 10,
+                "online_rate": -0.1,
+                "offline_rate": 0.14,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "moon+dpfl": {
+            "static": {
+                "iterations": 1,
+                "mu": 9,
+                "T": 35,
+                "inner_round_g": 9,
+                "inner_round_d": 2,
+                "kd_gamma": 9,
+                "kd_beta": 10,
+                "kd_eta": 6,
+                "con_T": 10,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "iterations": 1,
+                "mu": 5,
+                "T": 20,
+                "inner_round_g": 5,
+                "inner_round_d": 2,
+                "kd_gamma": 10,
+                "kd_beta": 5,
+                "kd_eta": 10,
+                "con_T": 20,
+                "online_rate": -0.2,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "iterations": 1,
+                "mu": 5,
+                "T": 50,
+                "inner_round_g": 6,
+                "inner_round_d": 4,
+                "kd_gamma": 6,
+                "kd_beta": 2,
+                "kd_eta": 6,
+                "con_T": 40,
+                "online_rate": -0.06,
+                "offline_rate": 0.12,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "iterations": 1,
+                "mu": 2,
+                "T": 30,
+                "inner_round_g": 7,
+                "inner_round_d": 3,
+                "kd_gamma": 8,
+                "kd_beta": 1,
+                "kd_eta": 2,
+                "con_T": 40,
+                "online_rate": 0.06,
+                "offline_rate": -0.02,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "iterations": 1,
+                "mu": 4,
+                "T": 20,
+                "inner_round_g": 6,
+                "inner_round_d": 4,
+                "kd_gamma": 6,
+                "kd_beta": 1,
+                "kd_eta": 7,
+                "con_T": 1,
+                "online_rate": 0,
+                "offline_rate": -0.02,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "iterations": 1,
+                "mu": 6,
+                "T": 20,
+                "inner_round_g": 9,
+                "inner_round_d": 2,
+                "kd_gamma": 7,
+                "kd_beta": 6,
+                "kd_eta": 2,
+                "con_T": 40,
+                "online_rate": 0.2,
+                "offline_rate": -0.1,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "flwf+dpfl": {
+            "static": {
+                "iterations": 1,
+                "alpha": 28,
+                "T": 17,
+                "inner_round_g": 4,
+                "inner_round_d": 4,
+                "kd_gamma": 6,
+                "kd_beta": 7,
+                "kd_eta": 10,
+                "con_T": 50,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "iterations": 1,
+                "alpha": 8,
+                "T": 17,
+                "inner_round_g": 8,
+                "inner_round_d": 4,
+                "kd_gamma": 4,
+                "kd_beta": 4,
+                "kd_eta": 4,
+                "con_T": 20,
+                "online_rate": 0.04,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "iterations": 1,
+                "alpha": 18,
+                "T": 15,
+                "inner_round_g": 1,
+                "inner_round_d": 4,
+                "kd_gamma": 6,
+                "kd_beta": 10,
+                "kd_eta": 6,
+                "con_T": 1,
+                "online_rate": 0.04,
+                "offline_rate": 0.16,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "iterations": 1,
+                "alpha": 22,
+                "T": 16,
+                "inner_round_g": 1,
+                "inner_round_d": 1,
+                "kd_gamma": 5,
+                "kd_beta": 3,
+                "kd_eta": 7,
+                "con_T": 50,
+                "online_rate": -0.14,
+                "offline_rate": -0.16,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "iterations": 1,
+                "alpha": 13,
+                "T": 11,
+                "inner_round_g": 7,
+                "inner_round_d": 3,
+                "kd_gamma": 5,
+                "kd_beta": 8,
+                "kd_eta": 9,
+                "con_T": 40,
+                "online_rate": 0.2,
+                "offline_rate": -0.02,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "iterations": 1,
+                "alpha": 27,
+                "T": 19,
+                "inner_round_g": 8,
+                "inner_round_d": 2,
+                "kd_gamma": 10,
+                "kd_beta": 3,
+                "kd_eta": 9,
+                "con_T": 30,
+                "online_rate": 0.08,
+                "offline_rate": -0.1,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        }
+    },
+
+    "Mnist": {
+        "fedavg": {},
+
+        "fedprox": {
+            "mu": 0.01
+        },
+
+        "scaffold": {},
+
+        "fedmd": {
+            "finetine_epochs": 40,
+            "logit_matching_epochs": 5
+        },
+
+        "feddf": {
+            "ensemble_epoch": 10,
+            "sever_local_steps": 8,
+            "T": 50,
+            "d_batch_size": 256
+        },
+
+        "fedgen": {
+            "ensemble_epochs": 10,
+            "ensemble_alpha": 4,
+            "ensemble_eta": 4,
+            "generative_alpha": 18,
+            "gen_batch_size": 256
+        },
+
+        "moon": {
+            "mu": 1,
+            "T": 20
+        },
+
+        "fedproto": {
+            "ld": 0.034525230100778376
+        },
+
+        "fpl": {
+            "infoNCET": 1.597429444616742
+        },
+
+        "flwf": {
+            "alpha": 26,
+            "T": 20
+        },
+
+        "cfed": {
+            "local_d_epochs": 5,
+            "server_d_epochs": 8,
+            "T": 35,
+            "alpha": 2.2750026165716735,
+            "d_batch_size": 32
+        },
+
+        "target": {
+            "alpha": 20,
+            "g_steps": 40,
+            "kd_steps": 20,
+            "warmup": 8,
+            "syn_round": 25,
+            "oh": 3,
+            "bn": 13,
+            "adv": 2,
+            "T": 7,
+            "gen_T": 15
+        },
+
+        "fccl": {
+            "public_batch_size": 256,
+            "off_diag_weight": 4.58
+        },
+
+        "fedcl": {
+            "proxy_ratio": 0.01,
+            "coe": 10.5
+        },
+
+        "fedprox+dpfl": {
+            "static": {
+                "iterations": 1,
+                "mu": 0.007177103705918669,
+                "inner_round_g": 9,
+                "inner_round_d": 5,
+                "kd_gamma": 3,
+                "kd_beta": 2,
+                "kd_eta": 7,
+                "con_T": 30,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "iterations": 1,
+                "mu": 0.004928521839955296,
+                "inner_round_g": 9,
+                "inner_round_d": 3,
+                "kd_gamma": 7,
+                "kd_beta": 10,
+                "kd_eta": 1,
+                "con_T": 20,
+                "online_rate": -0.18,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "iterations": 1,
+                "mu": 0.006099380296817334,
+                "inner_round_g": 5,
+                "inner_round_d": 3,
+                "kd_gamma": 8,
+                "kd_beta": 4,
+                "kd_eta": 7,
+                "con_T": 40,
+                "online_rate": 0,
+                "offline_rate": 0.16,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "iterations": 1,
+                "mu": 0.002877716620612914,
+                "inner_round_g": 4,
+                "inner_round_d": 3,
+                "kd_gamma": 5,
+                "kd_beta": 9,
+                "kd_eta": 7,
+                "con_T": 20,
+                "online_rate": 0.1,
+                "offline_rate": -0.04,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "iterations": 1,
+                "mu": 0.006607179630208521,
+                "inner_round_g": 9,
+                "inner_round_d": 3,
+                "kd_gamma": 6,
+                "kd_beta": 3,
+                "kd_eta": 10,
+                "con_T": 40,
+                "online_rate": 0.06,
+                "offline_rate": -0.16,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "iterations": 1,
+                "mu": 0.010138641309330032,
+                "inner_round_g": 8,
+                "inner_round_d": 2,
+                "kd_gamma": 6,
+                "kd_beta": 5,
+                "kd_eta": 6,
+                "con_T": 20,
+                "online_rate": 0.2,
+                "offline_rate": -0.08,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "fedgen+dpfl": {
+            "static": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 2,
+                "ensemble_eta": 5,
+                "inner_round_g": 8,
+                "inner_round_d": 2,
+                "kd_gamma": 1,
+                "kd_beta": 4,
+                "kd_eta": 4,
+                "con_T": 10,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 1,
+                "ensemble_eta": 4,
+                "inner_round_g": 5,
+                "inner_round_d": 3,
+                "kd_gamma": 3,
+                "kd_beta": 9,
+                "kd_eta": 9,
+                "con_T": 30,
+                "online_rate": -0.06,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 3,
+                "ensemble_eta": 2,
+                "inner_round_g": 7,
+                "inner_round_d": 5,
+                "kd_gamma": 7,
+                "kd_beta": 6,
+                "kd_eta": 7,
+                "con_T": 20,
+                "online_rate": -0.2,
+                "offline_rate": -0.08,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 4,
+                "ensemble_eta": 1,
+                "inner_round_g": 5,
+                "inner_round_d": 1,
+                "kd_gamma": 3,
+                "kd_beta": 3,
+                "kd_eta": 9,
+                "con_T": 30,
+                "online_rate": 0.1,
+                "offline_rate": -0.08,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 1,
+                "ensemble_eta": 3,
+                "inner_round_g": 8,
+                "inner_round_d": 2,
+                "kd_gamma": 3,
+                "kd_beta": 9,
+                "kd_eta": 9,
+                "con_T": 30,
+                "online_rate": 0.08,
+                "offline_rate": -0.12,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 1,
+                "ensemble_eta": 2,
+                "inner_round_g": 5,
+                "inner_round_d": 5,
+                "kd_gamma": 3,
+                "kd_beta": 1,
+                "kd_eta": 9,
+                "con_T": 30,
+                "online_rate": 0.06,
+                "offline_rate": -0.04,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "moon+dpfl": {
+            "static": {
+                "iterations": 1,
+                "mu": 6,
+                "T": 1,
+                "inner_round_g": 8,
+                "inner_round_d": 3,
+                "kd_gamma": 5,
+                "kd_beta": 6,
+                "kd_eta": 2,
+                "con_T": 40,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "iterations": 1,
+                "mu": 5,
+                "T": 1,
+                "inner_round_g": 4,
+                "inner_round_d": 3,
+                "kd_gamma": 6,
+                "kd_beta": 5,
+                "kd_eta": 10,
+                "con_T": 30,
+                "online_rate": -0.1,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "iterations": 1,
+                "mu": 5,
+                "T": 40,
+                "inner_round_g": 4,
+                "inner_round_d": 4,
+                "kd_gamma": 8,
+                "kd_beta": 6,
+                "kd_eta": 8,
+                "con_T": 20,
+                "online_rate": 0.02,
+                "offline_rate": 0.18,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "iterations": 1,
+                "mu": 3,
+                "T": 50,
+                "inner_round_g": 7,
+                "inner_round_d": 3,
+                "kd_gamma": 5,
+                "kd_beta": 10,
+                "kd_eta": 1,
+                "con_T": 30,
+                "online_rate": 0.2,
+                "offline_rate": -0.16,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "iterations": 1,
+                "mu": 1,
+                "T": 20,
+                "inner_round_g": 9,
+                "inner_round_d": 4,
+                "kd_gamma": 2,
+                "kd_beta": 7,
+                "kd_eta": 9,
+                "con_T": 10,
+                "online_rate": 0.08,
+                "offline_rate": 0.16,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "iterations": 1,
+                "mu": 2,
+                "T": 25,
+                "inner_round_g": 2,
+                "inner_round_d": 5,
+                "kd_gamma": 7,
+                "kd_beta": 4,
+                "kd_eta": 3,
+                "con_T": 10,
+                "online_rate": -0.02,
+                "offline_rate": 0.06,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "flwf+dpfl": {
+            "static": {
+                "iterations": 1,
+                "alpha": 7,
+                "T": 16,
+                "inner_round_g": 6,
+                "inner_round_d": 4,
+                "kd_gamma": 10,
+                "kd_beta": 5,
+                "kd_eta": 2,
+                "con_T": 10,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "iterations": 1,
+                "alpha": 15,
+                "T": 13,
+                "inner_round_g": 1,
+                "inner_round_d": 4,
+                "kd_gamma": 6,
+                "kd_beta": 7,
+                "kd_eta": 8,
+                "con_T": 10,
+                "online_rate": -0.2,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "iterations": 1,
+                "alpha": 14,
+                "T": 11,
+                "inner_round_g": 4,
+                "inner_round_d": 4,
+                "kd_gamma": 4,
+                "kd_beta": 6,
+                "kd_eta": 10,
+                "con_T": 30,
+                "online_rate": -0.08,
+                "offline_rate": 0.06,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "iterations": 1,
+                "alpha": 7,
+                "T": 18,
+                "inner_round_g": 9,
+                "inner_round_d": 3,
+                "kd_gamma": 8,
+                "kd_beta": 6,
+                "kd_eta": 8,
+                "con_T": 1,
+                "online_rate": 0.2,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "iterations": 1,
+                "alpha": 6,
+                "T": 10,
+                "inner_round_g": 7,
+                "inner_round_d": 4,
+                "kd_gamma": 1,
+                "kd_beta": 7,
+                "kd_eta": 7,
+                "con_T": 1,
+                "online_rate": -0.06,
+                "offline_rate": 0.04,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "iterations": 1,
+                "alpha": 18,
+                "T": 14,
+                "inner_round_g": 8,
+                "inner_round_d": 3,
+                "kd_gamma": 4,
+                "kd_beta": 2,
+                "kd_eta": 10,
+                "con_T": 20,
+                "online_rate": 0.18,
+                "offline_rate": 0.08,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        }
+    },
+
+    "Digits": {
+        "fedavg": {},
+
+        "fedprox": {
+            "mu": 0.00325
+        },
+
+        "scaffold": {},
+
+        "fedmd": {
+            "finetine_epochs": 40,
+            "logit_matching_epochs": 5
+        },
+
+        "feddf": {
+            "ensemble_epoch": 50,
+            "sever_local_steps": 3,
+            "T": 5,
+            "d_batch_size": 64
+        },
+
+        "fedgen": {
+            "ensemble_epochs": 10,
+            "ensemble_alpha": 2,
+            "ensemble_eta": 1,
+            "generative_alpha": 14,
+            "gen_batch_size": 32
+        },
+
+        "moon": {
+            "mu": 6,
+            "T": 45
+        },
+
+        "fedproto": {
+            "ld": 0.0099
+        },
+
+        "fpl": {
+            "infoNCET": 3.4138
+        },
+
+        "flwf": {
+            "alpha": 2,
+            "T": 17
+        },
+
+        "cfed": {
+            "local_d_epochs": 10,
+            "server_d_epochs": 6,
+            "T": 5,
+            "alpha": 2.8412,
+            "d_batch_size": 256
+        },
+
+        "target": {
+            "alpha": 20,
+            "g_steps": 40,
+            "kd_steps": 20,
+            "warmup": 8,
+            "syn_round": 25,
+            "oh": 3,
+            "bn": 13,
+            "adv": 2,
+            "T": 7,
+            "gen_T": 15
+        },
+
+        "fccl": {
+            "public_batch_size": 256,
+            "off_diag_weight": 4.58
+        },
+
+        "fedcl": {
+            "proxy_ratio": 0.1,
+            "coe": 14
+        },
+
+        "feddpfl": {
+            "static": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 3,
+                "ensemble_eta": 4,
+                "inner_round_g": 7,
+                "inner_round_d": 2,
+                "kd_gamma": 2,
+                "kd_beta": 2,
+                "kd_eta": 8,
+                "T": 50,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0,
+                "impt_ld": 0,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 6,
+                "ensemble_eta": 1,
+                "inner_round_g": 10,
+                "inner_round_d": 1,
+                "kd_gamma": 10,
+                "kd_beta": 6,
+                "kd_eta": 5,
+                "T": 50,
+                "online_rate": 0.16,
+                "offline_rate": 0,
+                "age_ld": 0.1,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 8,
+                "ensemble_eta": 3,
+                "inner_round_g": 9,
+                "inner_round_d": 1,
+                "kd_gamma": 2,
+                "kd_beta": 9,
+                "kd_eta": 3,
+                "T": 10,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.6,
+                "impt_ld": 0.4,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 3,
+                "ensemble_eta": 4,
+                "inner_round_g": 7,
+                "inner_round_d": 2,
+                "kd_gamma": 2,
+                "kd_beta": 2,
+                "kd_eta": 8,
+                "T": 50,
+                "online_rate": -0.9,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 4,
+                "ensemble_eta": 3,
+                "inner_round_g": 4,
+                "inner_round_d": 1,
+                "kd_gamma": 9,
+                "kd_beta": 1,
+                "kd_eta": 4,
+                "T": 50,
+                "online_rate": 0.14,
+                "offline_rate": -0.12,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 3,
+                "ensemble_eta": 4,
+                "inner_round_g": 7,
+                "inner_round_d": 2,
+                "kd_gamma": 2,
+                "kd_beta": 2,
+                "kd_eta": 8,
+                "T": 50,
+                "online_rate": -0.9,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        }
+    },
+
+    "Office-Caltech": {
+        "fedavg": {},
+
+        "fedprox": {
+            "mu": 0.22
+        },
+
+        "scaffold": {},
+
+        "fedmd": {
+            "finetine_epochs": 70,
+            "logit_matching_epochs": 2
+        },
+
+        "feddf": {
+            "ensemble_epoch": 30,
+            "sever_local_steps": 1,
+            "T": 30,
+            "d_batch_size": 64
+        },
+
+        "fedgen": {
+            "ensemble_epochs": 1,
+            "ensemble_alpha": 3,
+            "ensemble_eta": 1,
+            "generative_alpha": 14,
+            "gen_batch_size": 128
+        },
+
+        "moon": {
+            "mu": 4,
+            "T": 30
+        },
+
+        "fedproto": {
+            "ld": 18.5
+        },
+
+        "fedprotov2": {
+            "ld": 4.434193799972418,
+            "T": 25,
+            "warmup": 5
+        },
+
+        "fpl": {
+            "infoNCET": 3.76
+        },
+
+        "flwf": {
+            "alpha": 1,
+            "T": 13
+        },
+
+        "cfed": {
+            "local_d_epochs": 1,
+            "server_d_epochs": 1,
+            "T": 15,
+            "alpha": 2.47,
+            "d_batch_size": 256
+        },
+
+        "target": {
+            "alpha": 20,
+            "g_steps": 40,
+            "kd_steps": 20,
+            "warmup": 8,
+            "syn_round": 25,
+            "oh": 3,
+            "bn": 13,
+            "adv": 2,
+            "T": 7,
+            "gen_T": 15
+        },
+
+        "fccl": {
+            "public_batch_size": 256,
+            "off_diag_weight": 4.58
+        },
+
+        "fedcl": {
+            "proxy_ratio": 0.01,
+            "coe": 12.5
+        },
+
+        "fedavg+dpfl": {
+            "static": {
+                "iterations": 5,
+                "inner_round_g": 3,
+                "inner_round_d": 1,
+                "kd_gamma": 9,
+                "kd_beta": 9,
+                "kd_eta": 4,
+                "con_T": 20,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "fedprox+dpfl": {
+            "static": {
+                "iterations": 1,
+                "mu": 0.09823843732415294,
+                "inner_round_g": 3,
+                "inner_round_d": 1,
+                "kd_gamma": 1,
+                "kd_beta": 6,
+                "kd_eta": 9,
+                "con_T": 1,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 64
+            },
+            "incremental-arrival": {
+                "iterations": 1,
+                "mu": 0.6333817141172665,
+                "inner_round_g": 5,
+                "inner_round_d": 1,
+                "kd_gamma": 1,
+                "kd_beta": 2,
+                "kd_eta": 5,
+                "con_T": 40,
+                "online_rate": -0.04,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "iterations": 1,
+                "mu": 0.2867356192594822,
+                "inner_round_g": 8,
+                "inner_round_d": 1,
+                "kd_gamma": 3,
+                "kd_beta": 3,
+                "kd_eta": 4,
+                "con_T": 30,
+                "online_rate": -0.04,
+                "offline_rate": -0.2,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "iterations": 1,
+                "mu": 0.20545458016701468,
+                "inner_round_g": 3,
+                "inner_round_d": 3,
+                "kd_gamma": 8,
+                "kd_beta": 2,
+                "kd_eta": 2,
+                "con_T": 50,
+                "online_rate": 0.08,
+                "offline_rate": -0.04,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "iterations": 1,
+                "mu": 0.1835834416930583,
+                "inner_round_g": 9,
+                "inner_round_d": 2,
+                "kd_gamma": 5,
+                "kd_beta": 1,
+                "kd_eta": 5,
+                "con_T": 40,
+                "online_rate": -0.04,
+                "offline_rate": -0.04,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "iterations": 1,
+                "mu": 0.11715329716789424,
+                "inner_round_g": 2,
+                "inner_round_d": 4,
+                "kd_gamma": 9,
+                "kd_beta": 2,
+                "kd_eta": 2,
+                "con_T": 40,
+                "online_rate": 0.12,
+                "offline_rate": -0.18,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "fedgen+dpfl": {
+            "static": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 4,
+                "ensemble_eta": 2,
+                "inner_round_g": 8,
+                "inner_round_d": 1,
+                "kd_gamma": 6,
+                "kd_beta": 4,
+                "kd_eta": 2,
+                "con_T": 30,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 9,
+                "ensemble_eta": 4,
+                "inner_round_g": 4,
+                "inner_round_d": 2,
+                "kd_gamma": 4,
+                "kd_beta": 3,
+                "kd_eta": 1,
+                "con_T": 20,
+                "online_rate": 0.04,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 1,
+                "ensemble_eta": 3,
+                "inner_round_g": 7,
+                "inner_round_d": 5,
+                "kd_gamma": 9,
+                "kd_beta": 7,
+                "kd_eta": 10,
+                "con_T": 10,
+                "online_rate": -0.02,
+                "offline_rate": -0.1,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 7,
+                "ensemble_eta": 1,
+                "inner_round_g": 8,
+                "inner_round_d": 3,
+                "kd_gamma": 5,
+                "kd_beta": 2,
+                "kd_eta": 3,
+                "con_T": 1,
+                "online_rate": -0.08,
+                "offline_rate": -0.16,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 5,
+                "ensemble_eta": 1,
+                "inner_round_g": 4,
+                "inner_round_d": 2,
+                "kd_gamma": 3,
+                "kd_beta": 6,
+                "kd_eta": 6,
+                "con_T": 30,
+                "online_rate": -0.1,
+                "offline_rate": 0.12,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "ensemble_epochs": 30,
+                "generative_alpha": 15,
+                "iterations": 1,
+                "ensemble_alpha": 7,
+                "ensemble_eta": 2,
+                "inner_round_g": 9,
+                "inner_round_d": 4,
+                "kd_gamma": 7,
+                "kd_beta": 6,
+                "kd_eta": 4,
+                "con_T": 30,
+                "online_rate": 0.04,
+                "offline_rate": -0.16,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "moon+dpfl": {
+            "static": {
+                "iterations": 1,
+                "mu": 3,
+                "T": 10,
+                "inner_round_g": 3,
+                "inner_round_d": 3,
+                "kd_gamma": 9,
+                "kd_beta": 3,
+                "kd_eta": 2,
+                "con_T": 10,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "iterations": 1,
+                "mu": 5,
+                "T": 25,
+                "inner_round_g": 1,
+                "inner_round_d": 5,
+                "kd_gamma": 3,
+                "kd_beta": 1,
+                "kd_eta": 7,
+                "con_T": 20,
+                "online_rate": 0.06,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "iterations": 1,
+                "mu": 4,
+                "T": 10,
+                "inner_round_g": 8,
+                "inner_round_d": 1,
+                "kd_gamma": 3,
+                "kd_beta": 8,
+                "kd_eta": 7,
+                "con_T": 50,
+                "online_rate": -0.02,
+                "offline_rate": 0.06,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "iterations": 1,
+                "mu": 1,
+                "T": 25,
+                "inner_round_g": 7,
+                "inner_round_d": 1,
+                "kd_gamma": 8,
+                "kd_beta": 6,
+                "kd_eta": 8,
+                "con_T": 1,
+                "online_rate": -0.04,
+                "offline_rate": -0.08,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "iterations": 1,
+                "mu": 9,
+                "T": 40,
+                "inner_round_g": 6,
+                "inner_round_d": 1,
+                "kd_gamma": 7,
+                "kd_beta": 4,
+                "kd_eta": 6,
+                "con_T": 50,
+                "online_rate": -0.2,
+                "offline_rate": -0.14,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "iterations": 1,
+                "mu": 7,
+                "T": 35,
+                "inner_round_g": 3,
+                "inner_round_d": 1,
+                "kd_gamma": 9,
+                "kd_beta": 3,
+                "kd_eta": 4,
+                "con_T": 40,
+                "online_rate": 0.16,
+                "offline_rate": 0.06,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        },
+
+        "flwf+dpfl": {
+            "static": {
+                "iterations": 1,
+                "alpha": 2,
+                "T": 10,
+                "inner_round_g": 3,
+                "inner_round_d": 3,
+                "kd_gamma": 8,
+                "kd_beta": 5,
+                "kd_eta": 9,
+                "con_T": 20,
+                "online_rate": 0,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0,
+                "gen_batch_size": 128
+            },
+            "incremental-arrival": {
+                "iterations": 1,
+                "alpha": 8,
+                "T": 18,
+                "inner_round_g": 5,
+                "inner_round_d": 3,
+                "kd_gamma": 7,
+                "kd_beta": 7,
+                "kd_eta": 10,
+                "con_T": 40,
+                "online_rate": -0.1,
+                "offline_rate": 0,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "incremental-departure": {
+                "iterations": 1,
+                "alpha": 24,
+                "T": 14,
+                "inner_round_g": 6,
+                "inner_round_d": 4,
+                "kd_gamma": 6,
+                "kd_beta": 9,
+                "kd_eta": 7,
+                "con_T": 40,
+                "online_rate": 0.12,
+                "offline_rate": 0.1,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "round-robin": {
+                "iterations": 1,
+                "alpha": 4,
+                "T": 10,
+                "inner_round_g": 6,
+                "inner_round_d": 2,
+                "kd_gamma": 3,
+                "kd_beta": 10,
+                "kd_eta": 8,
+                "con_T": 20,
+                "online_rate": 0.18,
+                "offline_rate": 0.12,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "random": {
+                "iterations": 1,
+                "alpha": 8,
+                "T": 13,
+                "inner_round_g": 7,
+                "inner_round_d": 1,
+                "kd_gamma": 3,
+                "kd_beta": 3,
+                "kd_eta": 6,
+                "con_T": 20,
+                "online_rate": -0.04,
+                "offline_rate": 0.1,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            },
+            "markov": {
+                "iterations": 1,
+                "alpha": 18,
+                "T": 19,
+                "inner_round_g": 9,
+                "inner_round_d": 2,
+                "kd_gamma": 3,
+                "kd_beta": 3,
+                "kd_eta": 8,
+                "con_T": 20,
+                "online_rate": 0.16,
+                "offline_rate": -0.12,
+                "age_ld": 0.5,
+                "impt_ld": 0.5,
+                "gen_batch_size": 128
+            }
+        }
+    }
+}
