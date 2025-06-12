@@ -1,4 +1,5 @@
 # Federated-Learning Lab (FFLab)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/monarch0406/FL_Practice)
 
 一鍵用 Docker 跑起 **Gradio + TensorBoard** 的 FL 研究環境。  
 > 📦 Python 3.10 – PyTorch 2.2.2 (CPU) – Gradio – TensorBoard
