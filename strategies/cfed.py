@@ -11,6 +11,8 @@ from torch.optim import Optimizer
 from tqdm import tqdm
 from utils.data_model import load_public_data
 from utils.util import ConcatDataset, set_param
+from torchvision.datasets import MNIST
+from torchvision import transforms
 
 '''
 Hyperparameters (From paper):
@@ -50,7 +52,13 @@ class CFeD(FedAvg):
         client_list, global_model = kwargs["client_list"], kwargs["global_model"]
 
         ''' Prepare surrogate dataset for reviewing '''
-        self.unlabeled_dataset = load_public_data(dataset=self.args.dataset, args=self.args)
+        #self.unlabeled_dataset = load_public_data(dataset=self.args.dataset, args=self.args)
+        transform = transforms.Compose([
+            transforms.Grayscale(num_output_channels=3),  # 轉成 3 channel
+            transforms.ToTensor()
+        ])
+
+        self.unlabeled_dataset = MNIST(root="./data", download=True, train=True, transform=transform)
         
         # random split the dataset into args.client_num + 1
         length = len(self.unlabeled_dataset) // (self.args.num_clients + 1)
