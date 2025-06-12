@@ -24,9 +24,10 @@
 ---
 
 ## 取得原始碼
+記得先打開「Docker Desktop」
 ```bash
-git clone https://github.com/your-org/fflab.git
-cd fflab
+git clone https://github.com/monarch0406/FL_Practice.git
+cd FL_Practice
 ````
 
 > 也可以直接下載 ZIP 解壓。
